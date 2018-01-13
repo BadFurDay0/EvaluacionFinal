@@ -84,37 +84,63 @@ body{
   width: 33.33%;
   flex: 1 1 auto;
 }
+header {
+   display: flex;
+}
+.menu{
+  margin-left: 43%;
+  margin-top: 4.5%
+}
+
+.menu a{
+  color: white;
+}
+.titulo{
+  text-align: left;
+}
 
 
 
 }
-@media @media (min-width: 201px) and (max-width: 899px) {
+@media (min-width: 201px) and (max-width: 899px) {
   body{
     width: 100%;
   }
-  header{
-    align-items: center;
-  }
-  .imagen_secundaria, #galeria{
+
+.menu{
+  color: white;
+  text-align: center;
+}
+.titulo{
+  text-align: center;
+}
+
+  #galeria{
     display: -ms-flex;
     display: -webkit-flex;
    display:         flex;
-   -webkit-flex-flow: row;
-           flex-flow: row;
+   -webkit-flex-flow: column;
+             flex-flow: column;
+  }
+  .imagen_secundaria{
+    -webkit-flex-flow: column;
+              flex-flow: column;
   }
   .imagen_secundaria  div {
 width: 100%;
+-webkit-flex-flow: column;
+          flex-flow: column;
 }
-.piedepagina, #galeria{
-  display: -ms-flex;
-  display: -webkit-flex;
- display:         flex;
- -webkit-flex-flow: row;
-         flex-flow: row;
+
+.piedepagina{
+  -webkit-flex-flow: column;
+            flex-flow: column;
+
+}
+
 }
 
 
-}
 /*cabezera*/
 header{
   background: #5b7989;
@@ -125,19 +151,10 @@ header{
   color: white;
   text-shadow: 2px #02010a;
 }
-
-.contenido .titulo{
-  text-align: left;
-}
-.menu{
-  color: white;
-  text-align: right;
-
-}
-
 .menu a{
   color: white;
 }
+
 #centro{
   background: #82c3a6;
   text-align: center;
