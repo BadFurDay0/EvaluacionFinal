@@ -92,6 +92,9 @@ body{
   body{
     width: 100%;
   }
+  header{
+    align-items: center;
+  }
   .imagen_secundaria, #galeria{
     display: -ms-flex;
     display: -webkit-flex;
@@ -166,4 +169,25 @@ header{
 }
 .piedepagina .item{
   text-align: center;
+}
+/*animacion de rebote*/
+.contenido{
+    position: relative;
+    -webkit-animation: myfirst 1.2s 1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 1.2s 1;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {margin-top: 150%;}
+    60%  {margin-top: -5%;}
+    100% {margin-top: 0%;}
+}
+
+@keyframes myfirst {
+  0%   {margin-top: 150%;}
+  60%  {margin-top: -5%;}
+  100% {margin-top: 0%;}
 }
